@@ -4,11 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Produtos por Categoria</title>
-    <script src="./script.js"></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <h1>Produtos da Categoria: <span id="categoria-nome"></span></h1>
+    <!-- Filtros -->
+
+    <div>
+      <label for="preco-maximo">Preço Máximo:</label>
+      <input type="range" id="preco-maximo" step="0.10" />
+    </div>
+    <div>
+      <label for="marca-selecionada">Marca:</label>
+      <select id="marca-selecionada">
+        <option value="Todas">Todas</option>
+        <option value="EcoWear">EcoWear</option>
+        <option value="GreenStyle">GreenStyle</option>
+        <option value="EcoTech">EcoTech</option>
+      </select>
+    </div>
+    <button id="aplicar-filtros" onclick="aplicarFiltros()">
+      Aplicar Filtros
+    </button>
+    <span id="preco-maximo-valor">100</span>
+
+    <div id="categoria-nome"></div>
     <div id="produtos-lista"></div>
+
+    <div id="produtos-lista"></div>
+    <script type="module" src="./script.js"></script>
   </body>
 </html>

@@ -5,15 +5,8 @@
     "preco": 89.9,
     "descricao": "Camiseta feita de algodão 100% orgânico, suave ao toque e sustentável.",
     "tipo": "Roupas",
-    "marca": "EcoWear"
-  },
-  {
-    "id": 2,
-    "nome": "Bolsa de Linho Reciclado",
-    "preco": 129.9,
-    "descricao": "Bolsa estilosa e funcional feita de linho reciclado, com alças de fibra de bambu.",
-    "tipo": "Acessórios",
-    "marca": "GreenStyle"
+    "marca": "EcoWear",
+    "categoria": "roupas"
   },
   {
     "id": 3,
@@ -21,23 +14,8 @@
     "preco": 34.5,
     "descricao": "Shampoo sem químicos agressivos, com óleo de coco e fragrância natural.",
     "tipo": "Beleza",
-    "marca": "PureCare"
-  },
-  {
-    "id": 4,
-    "nome": "Desodorante Vegano de Lavanda",
-    "preco": 24.9,
-    "descricao": "Desodorante vegano e natural, com extrato de lavanda, livre de alumínio.",
-    "tipo": "Cuidados Pessoais",
-    "marca": "NaturalScent"
-  },
-  {
-    "id": 5,
-    "nome": "Escova de Dentes de Bambu",
-    "preco": 19.9,
-    "descricao": "Escova de dentes ecológica feita de bambu biodegradável.",
-    "tipo": "Cuidados Pessoais",
-    "marca": "EcoDent"
+    "marca": "EcoWear",
+    "categoria": "cuidados"
   },
   {
     "id": 6,
@@ -45,7 +23,35 @@
     "preco": 99.9,
     "descricao": "Toalhas super macias e feitas de algodão orgânico, ideal para o uso diário.",
     "tipo": "Casa",
-    "marca": "GreenLiving"
+    "marca": "EcoWear",
+    "categoria": "casa"
+  },
+  {
+    "id": 2,
+    "nome": "Bolsa de Linho Reciclado",
+    "preco": 129.9,
+    "descricao": "Bolsa estilosa e funcional feita de linho reciclado, com alças de fibra de bambu.",
+    "tipo": "Acessórios",
+    "marca": "GreenStyle",
+    "categoria": "roupas"
+  },
+  {
+    "id": 4,
+    "nome": "Desodorante Vegano de Lavanda",
+    "preco": 24.9,
+    "descricao": "Desodorante vegano e natural, com extrato de lavanda, livre de alumínio.",
+    "tipo": "Cuidados Pessoais",
+    "marca": "GreenStyle",
+    "categoria": "cuidados"
+  },
+  {
+    "id": 5,
+    "nome": "Escova de Dentes de Bambu",
+    "preco": 19.9,
+    "descricao": "Escova de dentes ecológica feita de bambu biodegradável.",
+    "tipo": "Cuidados Pessoais",
+    "marca": "GreenStyle",
+    "categoria": "cuidados"
   },
   {
     "id": 7,
@@ -53,7 +59,8 @@
     "preco": 39.9,
     "descricao": "Lâmpada LED com alta durabilidade e baixo consumo de energia.",
     "tipo": "Tecnologia Verde",
-    "marca": "EcoTech"
+    "marca": "EcoTech",
+    "categoria": "casa"
   },
   {
     "id": 8,
@@ -61,7 +68,8 @@
     "preco": 149.9,
     "descricao": "Carregador portátil alimentado por energia solar, ideal para viagens.",
     "tipo": "Tecnologia Verde",
-    "marca": "SunCharge"
+    "marca": "EcoTech",
+    "categoria": "casa"
   },
   {
     "id": 9,
@@ -69,14 +77,7 @@
     "preco": 24.9,
     "descricao": "Copo leve e reutilizável, feito de fibra de bambu, ideal para o dia a dia.",
     "tipo": "Casa",
-    "marca": "EcoHome"
-  },
-  {
-    "id": 10,
-    "nome": "Óculos de Sol de Madeira Reciclada",
-    "preco": 199.9,
-    "descricao": "Óculos de sol feitos com armação de madeira reciclada, com proteção UV.",
-    "tipo": "Acessórios",
-    "marca": "WoodVision"
+    "marca": "EcoTech",
+    "categoria": "casa"
   }
 ]

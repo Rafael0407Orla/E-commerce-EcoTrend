@@ -6,7 +6,8 @@
     "descricao": "Camiseta feita de algodão 100% orgânico, suave ao toque e sustentável.",
     "tipo": "Roupas",
     "marca": "EcoWear",
-    "categoria": "roupas"
+    "categoria": "roupas",
+    "img": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRYiwCYXqMyHvbM9b7Nq4r9gbz5p9kJYWqGJ9Ywn8fHdOErZOvZHOVUV0L3jZKufYaHjH6FSI8Si_MuCqEKRiL0Hky7vt5gCrU4hjvV6wBnlK6hLuksVpOb&usqp=CAE"
   },
   {
     "id": 3,
@@ -15,7 +16,8 @@
     "descricao": "Shampoo sem químicos agressivos, com óleo de coco e fragrância natural.",
     "tipo": "Beleza",
     "marca": "EcoWear",
-    "categoria": "cuidados"
+    "categoria": "cuidados",
+    "img": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRp20BeXGvDqbl-FMZoYfFP7UruqXbUdArvPUp9LcyJ7uRZ5th6xikU8qD0qAaDtMy_nqZ60eFoLZy1nho-am9kVE4Hie7QBfyEDn33SkvdR1XtQ1k-629x&usqp=CAE"
   },
   {
     "id": 6,
@@ -24,7 +26,8 @@
     "descricao": "Toalhas super macias e feitas de algodão orgânico, ideal para o uso diário.",
     "tipo": "Casa",
     "marca": "EcoWear",
-    "categoria": "casa"
+    "categoria": "casa",
+    "img": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcR9ITUEEuXFh0rYNHbjJtI90-pHmvswHlGV5_smHpXhPFJuvCnfeNkWbguHz61g2iTcw2Vj_jiUG9MJj0zY3WG900zf_PqUcSuUqN2tAPBC5sv3n8rnYAut&usqp=CAE"
   },
   {
     "id": 2,
@@ -33,7 +36,8 @@
     "descricao": "Bolsa estilosa e funcional feita de linho reciclado, com alças de fibra de bambu.",
     "tipo": "Acessórios",
     "marca": "GreenStyle",
-    "categoria": "roupas"
+    "categoria": "roupas",
+    "img": "https://www.lirabrindes.com/uploads/products/watermark/76802023101316972083980350972001697208398.jpg"
   },
   {
     "id": 4,
@@ -42,7 +46,8 @@
     "descricao": "Desodorante vegano e natural, com extrato de lavanda, livre de alumínio.",
     "tipo": "Cuidados Pessoais",
     "marca": "GreenStyle",
-    "categoria": "cuidados"
+    "categoria": "cuidados",
+    "img": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSPSleBsGD266v0DHRMA5he-96aG6lVoLhdYJ_cYWLfiyGJvrzEyirCO6apkZyN9fuOyWMN08fp1yiiRRpBRJ_HLRq2H36d3O_rGNJIIuKvirDt_b4YWHKM5g&usqp=CAE"
   },
   {
     "id": 5,
@@ -51,7 +56,8 @@
     "descricao": "Escova de dentes ecológica feita de bambu biodegradável.",
     "tipo": "Cuidados Pessoais",
     "marca": "GreenStyle",
-    "categoria": "cuidados"
+    "categoria": "cuidados",
+    "img": "https://cdn.awsli.com.br/600x450/290/290480/produto/119733899/design-sem-nome-89-45c090ba8d.jpg"
   },
   {
     "id": 7,
@@ -60,7 +66,8 @@
     "descricao": "Lâmpada LED com alta durabilidade e baixo consumo de energia.",
     "tipo": "Tecnologia Verde",
     "marca": "EcoTech",
-    "categoria": "casa"
+    "categoria": "casa",
+    "img": "https://www.decorlumen.com.br/media/catalog/product/cache/1/image/800x/9df78eab33525d08d6e5fb8d27136e95/1/3/1390_1.jpg"
   },
   {
     "id": 8,
@@ -69,7 +76,8 @@
     "descricao": "Carregador portátil alimentado por energia solar, ideal para viagens.",
     "tipo": "Tecnologia Verde",
     "marca": "EcoTech",
-    "categoria": "casa"
+    "categoria": "casa",
+    "img": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTyH_3nH7fIRjKMtVL16h_Y4QLlZlX3AxwGdDi8pjlvW1F-vb6tvfLFGW7b9uc850wX-lwHsU6Z7CN6uh7oig_Ee7Rwy_NKaQD2V1SBuVP3jHcIynK6_0viYu0&usqp=CAE"
   },
   {
     "id": 9,
@@ -78,6 +86,7 @@
     "descricao": "Copo leve e reutilizável, feito de fibra de bambu, ideal para o dia a dia.",
     "tipo": "Casa",
     "marca": "EcoTech",
-    "categoria": "casa"
+    "categoria": "casa",
+    "img": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQQtlSnJD-bIoiEhLwoEmeFLFwBq8jCpjGoc3E5lesS8uAXdeU3KJQkGhxTf6Dgc4MJPCF_85OtH1T4Rj3tlgrtVxAyUwcjt1SG8NEcmCRYk0EtXq6-AAthlQ&usqp=CAE"
   }
 ]

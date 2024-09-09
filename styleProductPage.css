@@ -1,0 +1,132 @@
+p, h1, h2, h3, h4, label{
+      margin: 0px;
+}
+
+.main{
+      display: grid;
+      grid-template-columns: auto;
+      padding: 0px 20px;
+}
+
+.sells{
+      display: grid;
+      gap: 10px;
+}
+
+.sells--info{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+
+.info--rate img{
+      width: 80px;      
+      height: 30px;
+}
+
+.item--options{
+      display: grid;
+      grid-template-columns: auto;
+      row-gap: 10px;
+}
+
+.paymentMethod{
+      background-color: rgb(226, 226, 226);
+      padding: 20px;
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+}
+
+.payment--label{
+      font-size: 12px;
+}
+
+.btn-container{
+      display: grid;
+      row-gap: 10px;
+}
+
+.sells--frete{
+      display: flex;
+      flex-wrap: wrap;
+      
+}
+
+#description{
+      display: grid;
+      gap: 10px;
+}
+
+.description--section{
+      background-color: rgb(226, 226, 226);
+      padding: 20px;
+      border-radius: 5px;
+}
+
+.tag{
+      display: inline-block;
+      background-color: rgb(255, 255, 149);
+      padding: 5px;
+      border-radius: 10px;
+      margin: 0px 10px 15px 0px;
+}
+
+@media only screen and (min-width: 768px) {
+      .item--options{
+            display: grid;
+            grid-template-columns: auto auto;
+            column-gap: 10px;
+      }
+      .btn-container{
+            display: grid;
+            grid-template-columns: auto auto;
+            column-gap: 10px;
+      }
+
+      .btn-container button{
+            flex: 1;
+      }
+
+      .input-group.mb-3 {
+            display: flex;
+            align-items: center;
+        }
+    
+        .input-group.mb-3 input {
+            flex: 1;
+        }
+    
+      }
+
+@media only screen and (min-width: 1280px){
+      .main{
+            grid-template-areas: 
+            "blankLeft carouselProductImages sells blankRight"
+            "blankLeft carouselProductImages sells blankRight"
+            "blankLeft description description blankRight"
+            "blankLeft description description blankRight";
+            grid-template-columns: 1fr 2fr 2fr 1fr;
+            grid-template-rows: 1fr;
+      }
+      div#blankLeft{
+            grid-area: blankLeft;
+      }
+      div#blankRight{
+            grid-area: blankRight;
+      }
+      #carouselProductImages{
+            grid-area: carouselProductImages;
+      }
+      #sells{
+            grid-area: sells;
+            padding: 0px 10px;
+      }
+      #description{
+            grid-area: description;
+            margin-top: 20px;
+      }
+
+}

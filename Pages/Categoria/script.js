@@ -1,11 +1,11 @@
-
+var listProducts;
 
 function getProducts() {
   fetch("../../products.json")
     .then((response) => response.json())
     .then((data) => {
       mostrarProdutosPorCategoria(data, categoria);
-      console.log(data);
+      listProducts = data;
     })
     .catch((error) => console.error("Error loading JSON file", error));
 }
@@ -18,17 +18,16 @@ function getCategoriaFromURL() {
   return urlParams.get("categoria");
 }
 
-function mostrarProdutosPorCategoria(data,
+function mostrarProdutosPorCategoria(
+  data,
   categoria,
   precoMaximo = Infinity,
   marcaSelecionada = "Todas"
 ) {
-  // Filtra produtos pela categoria
   const produtosFiltrados = data.filter(
     (produto) => produto.categoria === categoria
   );
 
-  // Aplica filtros de preço e marca
   const produtosFiltradosPorFiltros = produtosFiltrados.filter((produto) => {
     const dentroDoIntervaloDePreco = produto.preco <= precoMaximo;
     const marcaCorreta =
@@ -39,27 +38,26 @@ function mostrarProdutosPorCategoria(data,
   const categoriaNomeElement = document.getElementById("categoria-nome");
   const produtosListaElement = document.getElementById("produtos-lista");
 
-  categoriaNomeElement.textContent = categoria || "Todas";
-
   produtosListaElement.innerHTML = "";
 
   if (produtosFiltradosPorFiltros.length > 0) {
     produtosFiltradosPorFiltros.forEach((produto) => {
       const produtoHtml = `
-                  <div class="product-card">
-                      <div class="product-image">
-                          <img src="defaultImage.jpg" alt="Imagem do ${produto.nome}">
-                      </div>
-                      <div class="product-info">
-                          <h2 class="product-title">${produto.nome}</h2>
-                          <p class="product-description">${produto.descricao}</p>
-                          <p class="product-price">R$ ${produto.preco}</p>
-                          <p class="product-price">R$ ${produto.categoria}</p>
-                          <p class="product-price">R$ ${produto.marca}</p>
-                          <button class="buy-button">Comprar</button>
-                      </div>
-                  </div>
-              `;
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <img src="../../src/assets/defaultImage.jpg" class="card-img-top" alt="Imagem do ${produto.nome}">
+              <div class="card-body">
+                <h5 class="card-title">${produto.nome}</h5>
+                <p class="card-text">${produto.descricao}</p>
+                <p class="card-text text-muted">R$ ${produto.preco}</p>
+                <p class="card-text text-muted">Marca: ${produto.marca}</p>
+              </div>
+              <div class="card-footer text-center">
+                <a href="#" class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+          </div>
+        `;
       produtosListaElement.innerHTML += produtoHtml;
     });
   } else {
@@ -71,7 +69,13 @@ function mostrarProdutosPorCategoria(data,
 function aplicarFiltros() {
   const precoMaximo = parseFloat(document.getElementById("preco-maximo").value);
   const marcaSelecionada = document.getElementById("marca-selecionada").value;
-  mostrarProdutosPorCategoria(categoria, precoMaximo, marcaSelecionada);
+  console.log(marcaSelecionada);
+  mostrarProdutosPorCategoria(
+    listProducts,
+    categoria,
+    precoMaximo,
+    marcaSelecionada
+  );
 }
 function atualizarValorRange() {
   const precoMaximoInput = document.getElementById("preco-maximo");

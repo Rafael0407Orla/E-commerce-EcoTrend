@@ -1,12 +1,11 @@
 #produtos-lista {
-  width: 100;
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   gap: 24px;
 }
 
 .product-card {
-  width: 300px;
   border: 1px solid #ddd;
   border-radius: 10px;
   background-color: #fff;
@@ -61,3 +60,16 @@
 .buy-button:hover {
   background-color: #218838;
 }
+
+@media (min-width: 992px) {
+  #produtos-lista {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+
+  }
+}
+@media (min-width: 1200px) {
+    #produtos-lista {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }

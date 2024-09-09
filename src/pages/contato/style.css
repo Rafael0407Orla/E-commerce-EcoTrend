@@ -18,7 +18,6 @@
 .conteudo-1 {
     display: flex;
     flex-direction: column;
-    padding: 90px;
     gap: 20px;
 }
 

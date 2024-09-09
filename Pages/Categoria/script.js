@@ -11,7 +11,6 @@ function getProducts() {
 }
 
 var categoria;
-var maxPrice;
 
 function getCategoriaFromURL() {
   const urlParams = new URLSearchParams(window.location.search);
@@ -53,7 +52,7 @@ function mostrarProdutosPorCategoria(
                 <p class="card-text text-muted">Marca: ${produto.marca}</p>
               </div>
               <div class="card-footer text-center">
-                <a href="#" class="btn btn-primary">Comprar</a>
+                <a href="#" class="btn btn-success">Adicionar ao carrinho</a>
               </div>
             </div>
           </div>

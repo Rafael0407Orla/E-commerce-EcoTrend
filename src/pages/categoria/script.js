@@ -43,6 +43,7 @@ function mostrarProdutosPorCategoria(
     produtosFiltradosPorFiltros.forEach((produto) => {
       const produtoHtml = `
           <div class="col-lg-4 col-md-6 mb-4">
+          <a href="../detalhes/index.html?id=${produto.id}">
             <div class="card h-100">
               <img src="../../assets/defaultImage.jpg" class="card-img-top" alt="Imagem do ${produto.nome}">
               <div class="card-body">
@@ -52,9 +53,10 @@ function mostrarProdutosPorCategoria(
                 <p class="card-text text-muted">Marca: ${produto.marca}</p>
               </div>
               <div class="card-footer text-center">
-                <a href="#" class="btn btn-success">Adicionar ao carrinho</a>
+                <a href="" class="btn btn-success">Adicionar ao carrinho</a>
               </div>
             </div>
+            </a>
           </div>
         `;
       produtosListaElement.innerHTML += produtoHtml;

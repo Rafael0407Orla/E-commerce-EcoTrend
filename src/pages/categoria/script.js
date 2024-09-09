@@ -24,7 +24,7 @@ function mostrarProdutosPorCategoria(
   marcaSelecionada = "Todas"
 ) {
   const produtosFiltrados = data.filter(
-    (produto) => produto.categoria === categoria
+    (produto) => produto.categoria === categoria || categoria === null
   );
 
   const produtosFiltradosPorFiltros = produtosFiltrados.filter((produto) => {
@@ -68,7 +68,6 @@ function mostrarProdutosPorCategoria(
 function aplicarFiltros() {
   const precoMaximo = parseFloat(document.getElementById("preco-maximo").value);
   const marcaSelecionada = document.getElementById("marca-selecionada").value;
-  console.log(marcaSelecionada);
   mostrarProdutosPorCategoria(
     listProducts,
     categoria,
@@ -86,7 +85,6 @@ document
   .getElementById("preco-maximo")
   .addEventListener("input", atualizarValorRange);
 
-// Chame a função para definir o valor inicial
 atualizarValorRange();
 
 addEventListener("DOMContentLoaded", function () {

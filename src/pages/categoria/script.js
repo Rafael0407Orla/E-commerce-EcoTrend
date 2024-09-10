@@ -42,7 +42,7 @@ function mostrarProdutosPorCategoria(
   if (produtosFiltradosPorFiltros.length > 0) {
     produtosFiltradosPorFiltros.forEach((produto) => {
       const produtoHtml = `
-          <div class="col-lg-4 col-md-6 mb-4">
+          <div class="product-card">
             <div class="card h-100">
               <img src="${produto.img}" class="card-img-top" alt="Imagem do ${produto.nome}">
               <div class="card-body">

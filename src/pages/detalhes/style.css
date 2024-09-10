@@ -96,17 +96,32 @@ position: relative;
 }
 
 .paymentMethod{
-      background-color: rgb(226, 226, 226);
+      border: 1px solid #198754;
       padding: 20px;
       border-radius: 5px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       cursor: pointer;
+      transition: background-color 0.3s ease;
+}
+
+.paymentMethod.selected{
+      background-color: #198754;
+      color:white;
 }
 
 .payment--label{
       font-size: 12px;
+}
+
+.input-group-text{
+      border: 1px solid #198754;
+      background-color: white;
+}
+
+.form-select{
+      border: 1px solid #198754;
 }
 
 .btn-container{
@@ -130,9 +145,13 @@ position: relative;
 }
 
 .description--section{
-      background-color: rgb(226, 226, 226);
-      padding: 20px;
+      border: 1px solid #000;
+      padding: 10px;
       border-radius: 5px;
+}
+
+#productDescription{
+      margin-top: 15px;
 }
 
 .footer-icon, .footer-text:hover{
@@ -195,8 +214,8 @@ position: relative;
 
       .main{
             grid-template-areas: 
-            "blankLeft carouselProductImages sells blankRight"
-            "blankLeft carouselProductImages sells blankRight"
+            "blankLeft carouselProductImage sells blankRight"
+            "blankLeft carouselProductImage sells blankRight"
             "blankLeft description description blankRight"
             "blankLeft description description blankRight";
             grid-template-columns: 1fr 2fr 2fr 1fr;
@@ -208,8 +227,8 @@ position: relative;
       div#blankRight{
             grid-area: blankRight;
       }
-      #carouselProductImages{
-            grid-area: carouselProductImages;
+      #carouselProductImage{
+            grid-area: carouselProductImage;
       }
       #sells{
             grid-area: sells;

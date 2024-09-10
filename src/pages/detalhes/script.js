@@ -37,9 +37,9 @@ function getProductIdFromURL() {
                 productTitle.innerText = product.nome;
                 price1.innerText = "R$"+product.preco;
                 price2.innerText = "R$"+(product.preco/12).toFixed(2);
-                type.innerText = product.tipo;
-                marca.innerText = product.marca;
-                category.innerText = product.categoria;
+                type.innerText = "Tipo:  " + product.tipo;
+                marca.innerText = "Marca:  " + product.marca;
+                category.innerText = "Categoria:  " +product.categoria;
                 description.innerText = product.descricao
 
               }
@@ -50,5 +50,15 @@ function getProductIdFromURL() {
 window.onload = loadProductDetails;
 
 function selectRadio(value) {
-    document.getElementById('radio' + value).checked = true;
+    // Remove a classe 'selected' de todas as divs com a classe 'paymentMethod'
+    const allMethods = document.querySelectorAll('.paymentMethod');
+    allMethods.forEach(method => method.classList.remove('selected'));
+
+    // Marca o radio button correto
+    const selected = document.getElementById('radio' + value);
+    selected.checked = true;
+
+    // Adiciona a classe 'selected' à div associada ao radio selecionado
+    const paymentDiv = selected.closest('.paymentMethod');
+    paymentDiv.classList.add('selected');
 }

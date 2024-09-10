@@ -4,9 +4,9 @@
     "nome": "Camiseta de Algodão Orgânico",
     "preco": 89.9,
     "descricao": "Camiseta feita de algodão 100% orgânico, suave ao toque e sustentável.",
-    "tipo": "Roupas",
+    "tipo": "Camisetas",
     "marca": "EcoWear",
-    "categoria": "roupas",
+    "categoria": "Roupas",
     "capa": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRYiwCYXqMyHvbM9b7Nq4r9gbz5p9kJYWqGJ9Ywn8fHdOErZOvZHOVUV0L3jZKufYaHjH6FSI8Si_MuCqEKRiL0Hky7vt5gCrU4hjvV6wBnlK6hLuksVpOb&usqp=CAE",
     "img": [
       "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRYiwCYXqMyHvbM9b7Nq4r9gbz5p9kJYWqGJ9Ywn8fHdOErZOvZHOVUV0L3jZKufYaHjH6FSI8Si_MuCqEKRiL0Hky7vt5gCrU4hjvV6wBnlK6hLuksVpOb&usqp=CAE",
@@ -51,7 +51,7 @@
     "descricao": "Bolsa estilosa e funcional feita de linho reciclado, com alças de fibra de bambu.",
     "tipo": "Acessórios",
     "marca": "GreenStyle",
-    "categoria": "roupas",
+    "categoria": "Roupas",
     "capa":"https://www.lirabrindes.com/uploads/products/watermark/76802023101316972083980350972001697208398.jpg",
     "img": [
       "https://www.lirabrindes.com/uploads/products/watermark/76802023101316972083980350972001697208398.jpg",

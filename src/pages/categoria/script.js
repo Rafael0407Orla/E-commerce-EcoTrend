@@ -24,7 +24,7 @@ function mostrarProdutosPorCategoria(
   marcaSelecionada = "Todas"
 ) {
   const produtosFiltrados = data.filter(
-    (produto) => produto.categoria === categoria
+    (produto) => produto.categoria === categoria || categoria === null
   );
 
   const produtosFiltradosPorFiltros = produtosFiltrados.filter((produto) => {
@@ -42,10 +42,11 @@ function mostrarProdutosPorCategoria(
   if (produtosFiltradosPorFiltros.length > 0) {
     produtosFiltradosPorFiltros.forEach((produto) => {
       const produtoHtml = `
-          <div class="col-lg-4 col-md-6 mb-4">
-          <a href="../detalhes/index.html?id=${produto.id}">
+          <div class="product-card">
             <div class="card h-100">
-              <img src="${produto.capa}" class="card-img-top" alt="Imagem do ${produto.nome}">
+              <a href="../detalhes/index.html?id=${produto.id}">
+                <img src="${produto.capa}" class="card-img-top" alt="Imagem do ${produto.nome}">
+              </a>
               <div class="card-body">
                 <h5 class="card-title">${produto.nome}</h5>
                 <p class="card-text">${produto.descricao}</p>
@@ -70,7 +71,6 @@ function mostrarProdutosPorCategoria(
 function aplicarFiltros() {
   const precoMaximo = parseFloat(document.getElementById("preco-maximo").value);
   const marcaSelecionada = document.getElementById("marca-selecionada").value;
-  console.log(marcaSelecionada);
   mostrarProdutosPorCategoria(
     listProducts,
     categoria,
@@ -88,7 +88,6 @@ document
   .getElementById("preco-maximo")
   .addEventListener("input", atualizarValorRange);
 
-// Chame a função para definir o valor inicial
 atualizarValorRange();
 
 addEventListener("DOMContentLoaded", function () {

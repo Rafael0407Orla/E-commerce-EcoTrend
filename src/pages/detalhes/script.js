@@ -46,6 +46,9 @@ function getProductIdFromURL() {
           })
           .catch(error => console.error('Error loading product details:', error));
   }
-  
-  // Carregar os detalhes do produto ao carregar a página
-  window.onload = loadProductDetails;
+
+window.onload = loadProductDetails;
+
+function selectRadio(value) {
+    document.getElementById('radio' + value).checked = true;
+}

@@ -67,20 +67,20 @@
                               </select>
                         </div>
                   </div>
-                  <div class="paymentMethod">
+                  <div class="paymentMethod" onclick="selectRadio(1)">
                         <div>
                               <p class="payment--label">À Vista</p>
-                              <label for="option1" id="labelPrice1" style="font-size: 25px;"></label>
+                              <label for="options" id="labelPrice1" style="font-size: 25px;"></label>
                         </div>
-                        <input type="radio" id="option1" name="options" value="opcao1">
+                        <input type="radio" name="options" value="1" id="radio1">
                   </div>
-                  <div class="paymentMethod">
+                  <div class="paymentMethod" onclick="selectRadio(2)">
                         <div>
                               <p class="payment--label">Parcelado</p>
-                              <label for="option2" id="labelPrice2" style="font-size: 25px;"></label>
+                              <label for="options" id="labelPrice2" style="font-size: 25px;"></label>
                               <p>Em 12x sem juros</p>
                         </div>
-                        <input type="radio" id="option2" name="options" value="opcao2">
+                        <input type="radio" name="options" value="2" id="radio2">
                   </div>
                   <div class="btn-container">
                         <button type="button" class="btn btn-primary">Comprar agora</button>

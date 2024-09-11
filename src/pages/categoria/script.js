@@ -44,7 +44,9 @@ function mostrarProdutosPorCategoria(
       const produtoHtml = `
           <div class="product-card">
             <div class="card h-100">
-              <img src="${produto.img}" class="card-img-top" alt="Imagem do ${produto.nome}">
+              <a href="../detalhes/index.html?id=${produto.id}">
+                <img src="${produto.capa}" class="card-img-top" alt="Imagem do ${produto.nome}">
+              </a>
               <div class="card-body">
                 <h5 class="card-title">${produto.nome}</h5>
                 <p class="card-text">${produto.descricao}</p>
@@ -52,9 +54,10 @@ function mostrarProdutosPorCategoria(
                 <p class="card-text text-muted">Marca: ${produto.marca}</p>
               </div>
               <div class="card-footer text-center">
-                <a href="#" class="btn btn-success">Adicionar ao carrinho</a>
+                <a href="" class="btn btn-success">Adicionar ao carrinho</a>
               </div>
             </div>
+            </a>
           </div>
         `;
       produtosListaElement.innerHTML += produtoHtml;

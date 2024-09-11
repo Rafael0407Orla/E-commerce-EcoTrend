@@ -44,9 +44,11 @@ function mostrarProdutosPorCategoria(
       const produtoHtml = `
           <div class="product-card">
             <div class="card h-100">
-              <a href="../detalhes/index.html?id=${produto.id}">
-                <img src="${produto.capa}" class="card-img-top" alt="Imagem do ${produto.nome}">
-              </a>
+              <div id="productImg">
+                <a href="../detalhes/index.html?id=${produto.id}">
+                  <img src="${produto.capa}" class="card-img-top" alt="Imagem do ${produto.nome}">
+                </a>
+              </div>
               <div class="card-body">
                 <h5 class="card-title">${produto.nome}</h5>
                 <p class="card-text">${produto.descricao}</p>

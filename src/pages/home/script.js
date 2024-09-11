@@ -1,10 +1,8 @@
-// Função para carregar os produtos
 function carregarProdutos(data) {
-  const container = document.getElementById("product-container"); // Seleciona o contêiner onde os produtos serão inseridos
-  container.innerHTML = ""; // Limpa o conteúdo anterior
+  const container = document.getElementById("product-container");
+  container.innerHTML = "";
 
   data.forEach((produto) => {
-    // Cria o HTML do card do produto
     const productHTML = `
         <div class="col">
          <a href="../detalhes/index.html?id=${
@@ -12,7 +10,9 @@ function carregarProdutos(data) {
          }" class="text-decoration-none">
 
           <div class="card h-100">
+            <div class="card--img">
             <img src="${produto.capa}" class="card-img-top">
+            </div>
             <div class="card-body">
               <h5 class="card-title">${produto.nome}</h5>
               <p class="card-text">${produto.descricao}</p>
@@ -28,12 +28,10 @@ function carregarProdutos(data) {
         </div>
       `;
 
-    // Adiciona o produto ao contêiner
     container.innerHTML += productHTML;
   });
 }
 
-// Função para buscar os produtos
 function getProducts() {
   fetch("../../products.json")
     .then((response) => response.json())
@@ -44,5 +42,4 @@ function getProducts() {
     .catch((error) => console.error("Error loading JSON file", error));
 }
 
-// Quando a página carregar, chamar getProducts()
 document.addEventListener("DOMContentLoaded", getProducts);

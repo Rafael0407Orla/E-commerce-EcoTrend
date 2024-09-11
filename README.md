@@ -86,7 +86,8 @@ O arquivo `products.json` segue uma estrutura simples para definir os produtos, 
    ```
 
 2. **Visualizar o Site**
-   - Navegue até a pasta `src/pages/home/` e abra o arquivo `home.html` em um navegador web.
+   - Abra o arquivo `index.html` no root do projeto em um navegador web.
+   - Você também pode visualizar o site pelo GitHub Pages [clicando aqui](https://rafael0407orla.github.io/E-commerce-EcoTrend/)
 
 3. **Alterar Produtos**
    - Para atualizar os produtos exibidos, edite o arquivo `src/products.json`. Basta adicionar ou remover entradas no formato JSON, conforme necessário.

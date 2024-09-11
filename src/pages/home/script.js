@@ -5,7 +5,7 @@ function carregarProdutos(data) {
   data.forEach((produto) => {
     const productHTML = `
         <div class="col">
-         <a href="../detalhes/index.html?id=${
+         <a href="./src/pages/detalhes/indexDetalhes.html?id=${
            produto.id
          }" class="text-decoration-none">
 
@@ -33,7 +33,7 @@ function carregarProdutos(data) {
 }
 
 function getProducts() {
-  fetch("../../products.json")
+  fetch("./src/products.json")
     .then((response) => response.json())
     .then((data) => {
       carregarProdutos(data);

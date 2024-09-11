@@ -61,6 +61,24 @@ position: relative;
 .shadow-navbar{
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+.nav-link::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0; 
+      height: 2.5px;
+      background-color: #00a400;
+      visibility: hidden;
+      border-radius: 25%;
+      transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover::before, .nav-link.active::before {
+      width: 100%;
+      visibility: visible;
+}
 
 .main{
       display: grid;
@@ -192,25 +210,6 @@ position: relative;
       }
 
 @media only screen and (min-width: 1280px){
-
-      .nav-link::before {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 0; 
-            height: 2.5px;
-            background-color: #00a400;
-            visibility: hidden;
-            border-radius: 25%;
-            transition: width 0.3s ease-in-out;
-      }
-
-      .nav-link:hover::before, .nav-link.active::before {
-            width: 100%;
-            visibility: visible;
-      }
 
       .main{
             grid-template-areas: 

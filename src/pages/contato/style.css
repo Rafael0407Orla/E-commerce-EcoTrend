@@ -1,9 +1,66 @@
 * {
-    width: 100%;
-    margin: 0;
-    padding: 0;
+
     box-sizing: border-box;
-    text-decoration: none;
+} 
+
+.navbar-icon { 
+    color: #000000;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.navbar-icon:hover { 
+    color: #00a400;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.navbar{
+    background-color:#ffff;
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+}
+
+
+.navbar-brand{ 
+    font-weight: 500;
+    color: #000000;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.navbar-toggler{
+    border:none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus, .btn_close:focus{
+    box-shadow: none;
+    outline: none;
+}
+
+.navbar-brand:hover{ 
+    font-weight: 500;
+    color: #00a400;
+    font-size: 1.5rem;
+    transition: color 0.3s; 
+}
+
+.nav-link {
+    font-weight: 500;
+    color: gray;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #00a400;
+    font-weight: 500;
+    position: relative;
+}
+
+.shadow-navbar{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .secao-1 {
@@ -44,6 +101,7 @@
     display: flex;
     flex-direction: row;
     gap: 10px;
+    justify-content: center;
 }
 
 .shop-now {
@@ -88,8 +146,6 @@
 
 .secao-2 {
     height: 700px;
-    display: flex;
-    align-items: center;
     background-color: rgb(237, 243, 242);
 }
 
@@ -107,10 +163,38 @@
     height: 140px;
 }
 
+.footer-icon, .footer-text:hover{
+    color: #000000;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+  
+.footer-icon:hover, .footer-text:hover {
+    color: #008000;
+}
 
 
-@media only screen and (max-width: 600px) {
+
+@media only screen and (max-width: 900px) {
     .btn {
         width: 150px;
     }
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0; 
+        height: 2.5px;
+        background-color: #00a400;
+        visibility: hidden;
+        border-radius: 25%;
+        transition: width 0.3s ease-in-out;
+      }
+    
+      .nav-link:hover::before, .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+      }
 }

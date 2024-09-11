@@ -7,7 +7,9 @@ function carregarProdutos(data) {
     // Cria o HTML do card do produto
     const productHTML = `
         <div class="col">
-                      <a href="../detalhes/index.html?id=${produto.id}">
+         <a href="../detalhes/index.html?id=${
+           produto.id
+         }" class="text-decoration-none">
 
           <div class="card h-100">
             <img src="${produto.capa}" class="card-img-top">
@@ -18,8 +20,8 @@ function carregarProdutos(data) {
                 2
               )}</strong></p>
             </div>
-            <div class="card-footer bg-white">
-              <a href="#" class="btn btn-primary buy-button">Comprar</a>
+            <div class="card-footer">
+              <button href="#" class="btn btn-primary buy-button ">Comprar</button>
             </div>
           </div>
           </a>

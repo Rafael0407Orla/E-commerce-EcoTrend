@@ -83,7 +83,7 @@ function aplicarFiltros() {
 function atualizarValorRange() {
   const precoMaximoInput = document.getElementById("preco-maximo");
   const precoMaximoValor = document.getElementById("preco-maximo-valor");
-  precoMaximoValor.textContent = precoMaximoInput.value;
+  precoMaximoValor.textContent = `R$:${precoMaximoInput.value},00`;
 }
 
 document

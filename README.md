@@ -1,8 +1,9 @@
-Rafael Panhoca        || RM: 555014
-Victor Hugo Xavier    || RM: 559094
-João Leodoro          || RM: 555052
-Guilherme de Oliveira || RM: 558797
-Tatiana Thamye Oseko  || RM: 554605
+# Integrantes
+- Rafael Panhoca        || RM: 555014
+- Victor Hugo Xavier    || RM: 559094
+- João Leodoro          || RM: 555052
+- Guilherme de Oliveira || RM: 558797
+- Tatiana Thamye Oseko  || RM: 554605
 
 # EcoTrend E-commerce
 

@@ -10,6 +10,10 @@
   transition: color 0.3s; /* Transição da cor */
 }
 
+.shadow-navbar {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 .navbar {
   background-color: #ffff;
   height: 80px;

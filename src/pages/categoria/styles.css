@@ -1,9 +1,29 @@
-
-
-
-
 .mt-4{
   margin-top: 8.0rem !important;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+#productImg{
+  padding: 30px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #00a400;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #00a400;
+  cursor: pointer;
 }
 
 a {
@@ -28,16 +48,6 @@ a:hover, a:focus {
 }
 #product-card{
   width: 100%;
-}
-
-.footer-icon, .footer-text:hover{
-  color: #000000;
-  font-size: 1.2rem;
-  transition: color 0.3s;
-}
-
-.footer-icon:hover, .footer-text:hover {
-  color: #008000;
 }
 
 @media (min-width: 992px) {

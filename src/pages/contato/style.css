@@ -44,6 +44,7 @@
     flex-direction: row;
     justify-content: center;
     gap: 10px;
+    justify-content: center;
 }
 
 .shop-now {
@@ -110,9 +111,17 @@
     height: 140px;
 }
 
+.footer-icon, .footer-text:hover{
+    color: #000000;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+  
+.footer-icon:hover, .footer-text:hover {
+    color: #008000;
+}
 
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
     .btn {
         width: 150px;
     }

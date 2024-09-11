@@ -8,16 +8,26 @@ body {
 }
 
 #product-container {
+  padding: 20px;
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 24px;
+  grid-template-columns: 2fr;
+  gap: 50px;
+}
+
+.card--img{
+  padding: 20px;
+}
+
+.card-footer{
+  background-color: white;
+  border-top: 0;
+  margin-bottom: 20px;
 }
 
 @media (min-width: 992px) {
   #product-container {
     grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
   }
 }
 @media (min-width: 1200px) {
@@ -61,7 +71,6 @@ body {
 .card-img-top {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  height: 300px;
   object-fit: cover;
 }
 

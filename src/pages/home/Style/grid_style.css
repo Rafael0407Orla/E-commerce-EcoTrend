@@ -1,0 +1,87 @@
+
+  /* Centraliza o container e adiciona espaçamento superior */
+  .product-container {
+  display: flex;
+  justify-content: center;
+  }
+
+  /* Ajustes nos cards para um visual mais moderno */
+  .card {
+  border: none;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+ 
+
+  }
+
+  .card-text,.card-title{
+    color: #032103;
+  }
+
+  .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  /* Imagem dos produtos ajustada para ocupar todo o espaço */
+  .card-img-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
+  }
+
+  /* Botão de compra com bordas arredondadas e transição de cor */
+  .buy-button {
+  width: 100%;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  background-color: #032103;
+  border:none
+  }
+
+  .buy-button:hover {
+    border: none;
+    background-color: #008000;
+    color: #fff;
+  }
+
+  strong{
+    color: #008000;
+
+  }  
+
+  .card-footer{
+    border: none;
+  }
+
+  .container-grid{
+    background-color: rgb(172, 201, 169);
+    padding: 25px;
+    gap: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .custom-card {
+    position: relative;
+    border: none;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para o card */
+    border-top-left-radius: 120px;/* Arredonda o canto superior esquerdo */
+    border-top-right-radius: 120px;
+  }
+  
+  .custom-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .custom-card img {
+    border-top-left-radius: 120px; /* Arredonda a imagem junto com o card */
+    border-top-right-radius: 120px;
+  }
+
+ 

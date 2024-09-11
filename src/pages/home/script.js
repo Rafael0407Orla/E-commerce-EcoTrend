@@ -6,25 +6,22 @@ function carregarProdutos(data) {
   data.forEach((produto) => {
     // Cria o HTML do card do produto
     const productHTML = `
-        <div class="col">
-                      <a href="../detalhes/index.html?id=${produto.id}">
-
-          <div class="card h-100">
+      <div class="col">
+        <a href="../detalhes/index.html?id=${produto.id}" class="text-decoration-none">
+          <div class="card h-300 w-300 custom-card">
             <img src="${produto.capa}" class="card-img-top">
             <div class="card-body">
               <h5 class="card-title">${produto.nome}</h5>
               <p class="card-text">${produto.descricao}</p>
-              <p class="card-text text-primary"><strong>R$ ${produto.preco.toFixed(
-                2
-              )}</strong></p>
+              <p class="card-text text-primary"><strong>R$ ${produto.preco.toFixed(2)}</strong></p>
             </div>
-            <div class="card-footer bg-white">
-              <a href="#" class="btn btn-primary buy-button">Comprar</a>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary buy-button text-decoration-none">Comprar</a>
             </div>
           </div>
-          </a>
-        </div>
-      `;
+        </a>
+      </div>
+    `;
 
     // Adiciona o produto ao contêiner
     container.innerHTML += productHTML;

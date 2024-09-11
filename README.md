@@ -36,11 +36,12 @@ O projeto está estruturado de forma organizada para facilitar o desenvolvimento
 ```
 E-commerce-EcoTrend/
 │
+├── index.html                     # Página Inicial
 ├── src/
 │   ├── assets/
 │   │   └── images/                # Imagens usadas no site, incluindo produtos e ícones
 │   ├── pages/
-│   │   ├── home/                  # Página inicial (home)
+│   │   ├── home/                  # Arquivos da página inicial
 │   │   ├── categoria/             # Página de categorias
 │   │   ├── detalhes/              # Página de detalhes do produto
 │   │   └── contato/               # Página de contato

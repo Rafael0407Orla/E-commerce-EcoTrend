@@ -1,3 +1,21 @@
+#product-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+@media (min-width: 992px) {
+  #product-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
+@media (min-width: 1200px) {
+  #product-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 .carousel-item {
   height: 70vh;
 }
@@ -8,15 +26,50 @@
   width: 100%;
 }
 .carrousel-title-container {
-    z-index: 10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   width: 100%;
   height: 100%;
 }
 
-.control-carrousel{
-    z-index: 10;
+.control-carrousel {
+  z-index: 10;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+.card-img-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.buy-button {
+  width: 100%;
+  border-radius: 50px;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  background-color: #032103;
+  border: none;
+}
+
+.buy-button:hover {
+  border: none;
+  background-color: #008000;
+  color: #fff;
+}
+
+strong {
+  color: #008000;
 }

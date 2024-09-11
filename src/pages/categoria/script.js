@@ -45,7 +45,7 @@ function mostrarProdutosPorCategoria(
           <div class="product-card">
             <div class="card h-100">
               <div id="productImg">
-                <a href="../detalhes/index.html?id=${produto.id}">
+                <a href="../detalhes/indexDetalhes.html?id=${produto.id}">
                   <img src="${produto.capa}" class="card-img-top" alt="Imagem do ${produto.nome}">
                 </a>
               </div>

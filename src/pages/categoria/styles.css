@@ -48,35 +48,6 @@ a:hover, a:focus {
   width: 100%;
 }
 
-.footer-icon, .footer-text:hover{
-  color: #000000;
-  font-size: 1.2rem;
-  transition: color 0.3s;
-}
-
-.footer-icon:hover, .footer-text:hover {
-  color: #008000;
-}
-
-.nav-link::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 0; 
-  height: 2.5px;
-  background-color: #00a400;
-  visibility: hidden;
-  border-radius: 25%;
-  transition: width 0.3s ease-in-out;
-}
-
-.nav-link:hover::before, .nav-link.active::before {
-  width: 100%;
-  visibility: visible;
-}
-
 @media (min-width: 992px) {
   #produtos-lista {
     grid-template-columns: repeat(2, 1fr);

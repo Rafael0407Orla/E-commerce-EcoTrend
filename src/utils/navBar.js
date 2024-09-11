@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-      const currentPath = window.location.pathname.split('/').pop(); // Obtém apenas o nome da página
+      const currentPath = window.location.pathname.split('/').pop();
     
       const navLinks = document.querySelectorAll('.nav-link');
     

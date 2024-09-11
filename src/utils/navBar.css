@@ -1,13 +1,13 @@
 .navbar-icon {
   color: #000000;
   font-size: 1.5rem;
-  transition: color 0.3s; /* Transição da cor */
+  transition: color 0.3s; 
 }
 
 .navbar-icon:hover {
   color: #00a400;
   font-size: 1.5rem;
-  transition: color 0.3s; /* Transição da cor */
+  transition: color 0.3s; 
 }
 
 .shadow-navbar {
@@ -26,7 +26,7 @@
   font-weight: 500;
   color: #000000;
   font-size: 1.5rem;
-  transition: color 0.3s; /* Corrigido para a transição da cor */
+  transition: color 0.3s;
 }
 
 .navbar-toggler {
@@ -44,7 +44,7 @@
   font-weight: 500;
   color: #00a400;
   font-size: 1.5rem;
-  transition: color 0.3s; /* Corrigido para a transição da cor */
+  transition: color 0.3s;
 }
 
 .nav-link {
@@ -59,24 +59,22 @@
   position: relative;
 }
 
-@media (min-width: 991px) {
-  .nav-link::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0; /* Corrigido para iniciar com largura 0 */
-    height: 2.5px;
-    background-color: #00a400;
-    visibility: hidden;
-    border-radius: 25%;
-    transition: width 0.3s ease-in-out; /* Corrigido para a transição da largura */
-  }
+.nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2.5px;
+  background-color: #00a400;
+  visibility: hidden;
+  border-radius: 25%;
+  transition: width 0.3s ease-in-out;
+}
 
-  .nav-link:hover::before,
-  .nav-link.active::before {
-    width: 100%;
-    visibility: visible;
-  }
+.nav-link:hover::before,
+.nav-link.active::before {
+  width: 100%;
+  visibility: visible;
 }
